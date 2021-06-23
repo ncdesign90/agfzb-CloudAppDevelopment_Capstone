@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+
+</head>
+    <body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Best Cars</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/djangoapp">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/djangoapp/about/">About Us</a>
+                <a class="nav-item nav-link active" href="/djangoapp/contact/">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-xs-12 col-sm-6 col-md-8">
+                    <h1>
+                    Contact us to get an instant offer on your used vehicle.
+                    </h1>
+                    <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <address>
+                        <strong>Best Cars</strong><br>
+                        1 Main St.<br>
+                        Boston, MA 02134<br>
+                        <a href="mailto:test@bestcars.com"><strong>Email: </strong>test@bestcars.com</a><br>
+                        <a href="tel:+19785555555"><strong>Phone: </strong>(978) 555-5555</a>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <h2>Write your message below:</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName">Name</label>
+                        <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>                    
+                    <button type="button" class="btn btn-primary">Contact Us</button>
+                </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
