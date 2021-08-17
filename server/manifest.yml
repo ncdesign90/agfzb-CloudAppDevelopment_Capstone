@@ -1,11 +1,10 @@
   applications:
+
   - name: ncdesign90-reviews
     routes:
       - route: ncdesign90.us-south.cf.appdomain.cloud
     memory: 128M
-    buildpack: python_buildpack
+    buildpack: staticfile_buildpack
   - name: ncdesign90-nginx
     routes:
       - route: ncdesign90.us-south.cf.appdomain.cloud/static
-    memory: 128M
-    buildpack: staticfile_buildpack
